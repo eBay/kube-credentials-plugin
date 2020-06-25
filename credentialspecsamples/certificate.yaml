@@ -5,13 +5,13 @@ metadata:
   name: "another-test-certificate"
   labels:
     # so we know what type it is.
-    "jenkins.io/credentials-type": "certificate"
+    "jenkins.io/credentials-type": "<<CREDENTIAL_TYPE>>"
   annotations:
     # description - can not be a label as spaces are not allowed
-    "jenkins.io/credentials-description" : "certificate credential from Kubernetes"
+    "jenkins.io/credentials-description" : "<<CREDENTIAL_DESC>>"
 type: Opaque
 stringData:
   password: testPassword
 data:
   # PKCS#12 base64 encoded bytes
-  certificate: "encoded bytes here"
+  certificate: "<<ENCODED BYTES>>"

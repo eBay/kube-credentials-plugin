@@ -5,12 +5,12 @@ metadata:
   name: "another-test-docker-host-cert"
   labels:
   # so we know what type it is.
-    "jenkins.io/credentials-type": “dockerHostCert”
+    "jenkins.io/credentials-type": "<<CREDENTIAL_TYPE>>"
   annotations:
     # description - can not be a label as spaces are not allowed
-    "jenkins.io/credentials-description" : "credentials from Kubernetes"
+    "jenkins.io/credentials-description" : "<<CREDENTIAL_DESC>>"
 type: Opaque
 stringData:
-  clientKey:  "Actual client key"
-  clientCert: "Actual client cert"
-  serverCert: "Actual server cert"
+  clientKey:  "<<ACTUAL CLIENT KEY>>"
+  clientCert: "<<ACTUAL CLIENT CERT>>"
+  serverCert: "<<ACTUAL SERVER CERT>>"

@@ -5,10 +5,10 @@ metadata:
   name: "another-test-openshift-user-password"
   labels:
   # so we know what type it is.
-    "jenkins.io/credentials-type": “openShiftUserPassword”
+    "jenkins.io/credentials-type": "<<CREDENTIAL_TYPE>>"
   annotations:
   # description - can not be a label as spaces are not allowed
-    "jenkins.io/credentials-description" : "credentials from Kubernetes"
+    "jenkins.io/credentials-description" : "<<CREDENTIAL_DESC>>"
 type: Opaque
 stringData:
   user: myUsername
